@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Level Select</title>
+    <style>
+        .map {
+            position: relative;
+            width: 500px;
+            height: 500px;
+        }
+        .map img {
+            width: 100%;
+            height: 100%;
+        }
+        .map .tooltip {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+        .map:hover .tooltip {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="map">
+        <img src="46.jpg" alt="Game Map">
+        <div class="tooltip">Game Map</div>
+    </div>
+    <script>
+        document.querySelector('.map').addEventListener('click', function() {
+            window.location.href = 'level1.html';
+        });
+    </script>
+</body>
+</html>

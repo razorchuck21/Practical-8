@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #top-news {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #news-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        aside {
+            order: 3;
+        }
+
+        @media (max-width: 768px) {
+            /* Tablet */
+            #top-news, #news-section {
+                flex-direction: column;
+            }
+
+            .news-item .excerpt {
+                order: 2;
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* Mobile */
+            .news-item .excerpt {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="train.jpg" alt="train">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="top-news">
+        <img src="breaking news.jpg" alt="breaking news">
+        <div>
+            <h1>Train Crash Story</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eligendi quaerat aut exercitationem ea ut, inventore, repellat fugit veritatis cupiditate ipsa nihil velit ducimus natus magnam. Optio sit veniam illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vitae magnam sunt consectetur odit, dolorem aspernatur optio soluta modi mollitia corporis pariatur ad nihil, quibusdam sequi eaque esse tempora debitis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa reiciendis veniam iusto error vero voluptas voluptatibus aliquid ipsum et, quos rerum delectus laborum officia at magnam itaque natus ipsam totam!</p>
+            <button>Read More</button>
+        </div>
+    </section>
+
+    <section id="news-section">
+        <!-- Repeat this block for each news item -->
+        <div class="news-item">
+            <img src="thumbnail.jpg" alt="thumbnail">
+            <h2>New Train Inbound</h2>
+            <p class="meta-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsam, dolorum voluptas iste corporis quae sint quod laboriosam laborum fugiat sequi quaerat molestias, perspiciatis tempora doloremque maiores quidem quas! Sint!</p>
+            <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quisquam fugiat hic totam fugit accusamus mollitia nesciunt reprehenderit repellat aspernatur adipisci, delectus illo possimus, tenetur vero quos harum exercitationem nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, nostrum facere. Adipisci itaque similique, dolorem placeat assumenda porro sit sunt dolorum dicta nostrum. Atque ut corporis at laborum consequatur delectus.</p>
+            <button>Read More</button>
+        </div>
+    </section>
+
+    <aside>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti unde iusto accusamus doloremque quod error animi esse neque enim fuga aut asperiores iure amet fugit, ipsum pariatur. Dolores, quos mollitia.
+    </aside>
+
+    <footer>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nam deleniti dolor rerum ipsa odio quidem corporis, libero temporibus blanditiis nemo, corrupti aliquam, iusto voluptas possimus tempora commodi numquam saepe. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime laudantium aut error placeat, quia temporibus laborum totam? Eum, iusto fugit quo recusandae dolorem tenetur perspiciatis quidem facere, enim, vitae atque? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure voluptas at sint fugiat repellendus saepe tempore voluptatum architecto atque quod quas veritatis labore, nemo asperiores mollitia provident eos facere similique.
+    </footer>
+</body>
+</html>

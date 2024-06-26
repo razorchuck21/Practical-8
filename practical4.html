@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>4th</title>
+
+    <style>
+        
+        * {
+            font-family: 'Roboto', sans-serif;
+            padding: 10px;
+            margin: 10px;
+        }
+
+       
+        div > p {
+            font-weight: bold;
+        }
+
+        
+        div:hover {
+            background-color: #f0f0f0;
+        }
+
+        
+        table tr td:last-child {
+            color: red;
+        }
+
+        
+        ul li:nth-child(even), table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        ul li:nth-child(odd), table tr:nth-child(odd) {
+            background-color: #e0e0e0;
+        }
+
+        
+        p::first-letter {
+            font-size: 2em;
+        }
+
+       
+        ::selection {
+            background: #ffb7b7;
+        }
+
+     
+        li::before {
+            content: "\2192";
+            padding-right: 5px;
+        }
+        
+        
+        p:not(.highlight) {
+    color: blue;
+}
+    </style>
+
+</head>
+
+<body id="top">
+ 
+    <article id="answer">
+        <h2>What is selector’s specificity and how it’s calculated?</h2>
+        <p>Selector specificity in CSS is a measure of how specific a CSS selector is in the way it targets an HTML element. It is used in the specificity algorithm to determine the final CSS property values for a given element in the DOM tree. Specificity is calculated by starting at 0, adding 100 for each ID value, adding 10 for each class value (or pseudo-class or attribute selector), and adding 1 for each element selector or pseudo-element. Inline style gets a specificity value of 1000, and is always given the highest priority.</p>
+    
+        <h2>What are complex selectors?</h2>
+        <p>Complex selectors in CSS are sequences of one or more simple and/or compound selectors that are separated by combinators. They represent a set of simultaneous conditions on a set of elements. Complex selectors use relationships between the elements as matching criteria. To define this relationship, we use combinators between two identifiers. They can be much more sophisticated and specific than simple selectors.</p>
+    
+        <h2>What is the difference between pseudo-classes and pseudo-elements?</h2>
+        <p>Pseudo-classes and pseudo-elements are two types of keywords in CSS that you can combine with selectors. They are used to target the element's state or specific parts of an element. Pseudo-classes are used to target an element that's in a specific state, such as being hovered over by the mouse pointer. On the other hand, pseudo-elements are used to style specified parts of an element. They can be used to target the first letter or first line, or to insert content before or after the element.</p>
+    </article>
+     
+
+
+    <a href="#text">Text</a>
+    <ul>
+      <li><a href="#text__headings">Headings</a></li>
+      <li><a href="#text__paragraphs">Paragraphs</a></li>
+      <li><a href="#text__blockquotes">Blockquotes</a></li>
+      <li><a href="#text__lists">Lists</a></li>
+      <li><a href="#text__hr">Horizontal rules</a></li>
+      <li><a href="#text__tables">Tabular data</a></li>
+      <li><a href="#text__code">Code</a></li>
+      <li><a href="#text__inline">Inline elements</a></li>
+      <li><a href="#text__comments">HTML Comments</a></li>
+    </ul>
+</body>
+</html>

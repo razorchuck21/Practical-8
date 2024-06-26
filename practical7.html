@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <script>
+        function calculate(num1, operator, num2) {
+            switch(operator) {
+                case '+':
+                    return num1 + num2;
+                case '-':
+                    return num1 - num2;
+                case '*':
+                    return num1 * num2;
+                case '/':
+                    if(num2 != 0) {
+                        return num1 / num2;
+                    } else {
+                        return "Error: Division by zero is not allowed.";
+                    }
+                default:
+                    return "Error: Invalid operator.";
+            }
+        }
+
+        function performCalculation() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var operator = document.getElementById('operator').value;
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var result = calculate(num1, operator, num2);
+            document.getElementById('result').value = "The result is: " + result;
+        }
+    </script>
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel();
+    });
+    </script>
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 1,
+            nav: true
+        });
+    });
+    </script>
+
+</head>
+<body>
+    <form>
+        <label for="num1">Number 1:</label><br>
+        <input type="number" id="num1" name="num1" value="0"><br>
+        <label for="operator">Operator:</label><br>
+        <select id="operator" name="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select><br>
+        <label for="num2">Number 2:</label><br>
+        <input type="number" id="num2" name="num2" value="0"><br>
+        <input type="button" value="Calculate" onclick="performCalculation()">
+        <input type="reset" value="Reset">
+    </form>
+    <output id="result"></output>
+
+    <div class="owl-carousel">
+        <div class="slide">
+            <h2>Explain “repaint” and “reflow” of the webpage.</h2>
+            <p>Reflow is the process of the browser recalculating the layout and position of elements on the page. It happens when changes are made to the elements, that affect the layout of the partial or whole page. Reflow is essentially the computation of the offsets and dimensions of given elements to understand what comes where and takes how much of space, and so on.</p>
+            <p>Repaint is the process of the browser re-drawing elements on the page. It occurs when changes are made to the appearance of the elements that change the visibility, but doesn’t affect the layout. Repaint is the next stage after reflow. It is when the computation made in the reflow stage is actually used to paint pixels on the screen.</p>
+        </div>
+        <div class="slide">
+            <h2>How does JavaScript on the webpage affects the page load speed and performance?</h2>
+            <p>JavaScript has a greater potential for negative performance impact — it can significantly impact download times, rendering performance, and CPU and battery usage. While images and video account for over 70% of the bytes downloaded for the average website, byte per byte.</p>
+            <p>Each file (CSS, JavaScript, images) on your webpage requires an HTTP request. Minimizing these requests can significantly improve load times.</p>
+            <p>Putting your scripts at the bottom of the page body lets the browser load the page first. While a script is downloading, the browser will not start any other downloads. In addition all parsing and rendering activity might be blocked.</p>
+        </div>
+        <div class="slide">
+            <h2>What is “minification” of the script? Why it is useful to minify your scripts?</h2>
+            <p>A web worker is a JavaScript that runs in the background, independently of other scripts, without affecting the performance of the page. You can continue to do whatever you want: clicking, selecting things, etc., while the web worker runs in the background.</p>
+    <p>Web Workers are a simple means for web content to run scripts in background threads. The worker thread can perform tasks without interfering with the user interface.</p>
+
+
+        </div>
+        
+    </div>
+    
+    
+
+</body>
+</html>

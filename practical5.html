@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>numero 5</title>
+    <style>
+        img {
+            float: right;
+            max-width: 400px;
+            margin-left: 10px;
+        }
+        img.float-left {
+    float: left;
+    max-width: 400px;
+    margin-right: 10px;
+}
+
+img.float-right {
+    float: right;
+    max-width: 400px;
+    margin-left: 10px;
+}
+    </style>
+</head>
+
+<header>
+    <nav>
+        <ul style="list-style-type: none; margin: 0; padding: 0; overflow: hidden;">
+            <li style="float: left;"><a href="#q1">Question 1</a></li>
+            <li style="float: left;"><a href="#q2">Question 2</a></li>
+            <li style="float: left;"><a href="#q3">Question 3</a></li>
+            <li style="float: left;"><a href="#q4">Question 4</a></li>
+            <li style="float: left;"><a href="#q5">Question 5</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+    <main>
+        <article>
+            <h1>Practical 5</h1>
+
+            <h2 id="q1">What is a box model in CSS.</h2>
+            <p>The box model in CSS is a container that contains various properties, including borders, margins, padding, and the content itself. These properties collectively determine the dimensions and spacing of an element. The <strong>box-sizing</strong> CSS property sets how the total width and height of an element is calculated. It can have two values:</p>
+            <ul>
+                <li><strong>content-box:</strong> This is the default CSS box-sizing behavior. If you set an element's width to 100 pixels, then the element's content box will be 100 pixels wide, and the width of any border or padding will be added to the final rendered width.</li>
+                <li><strong>border-box:</strong> This tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width.</li>
+            </ul>
+            <img class='float-right' src="CSS-Box-Model.jpg" alt="CSS-Box-Model">
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<h2 id="q2">What is a “clearfix hack” and when does it need to be applied</h2>
+            <p>The “Clearfix” hack is a technique used in CSS to clear or contain floated elements within a container. It addresses issues where a container does not fully encompass its floated child elements, causing layout problems, especially with collapsing margins.</p>
+            <img class='float-right' src="clearfix.png" alt="clearfix">
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <h2 id="q3">What is a “margin collapse and what are the use cases for margin: auto and negative margin values”</h2>
+            <p>Margin collapse occurs when vertically adjacent margins of block-level elements collide to share a general margin space. The size of this shared space is dictated by the larger number margin.</p>
+            <img class='float-right' src="margin-collapse.png" alt="margin-collapse">
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <h2 id="q4">What was the problem with achieving Holy Grail layout</h2>
+            <p>The main body of content occupies the center area, with two panels of supporting content or interface elements on either side. In the early 2000s, it was difficult to reliably achieve the holy grail layout using existing web technologies.</p>
+            <img class='float-right' src="holy_grail.jpg" alt="holy_grail">
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <h2 id="q5">What are the modern ways to achieve Holy Grail layout</h2>
+            <p>Today the holy grail layout is trivial to implement using widely-adopted technologies, such as CSS Grid or Flexbox.</p>
+            <img class='float-right' src="responsive-holy-grail-layout.png" alt="responsive-holy-grail-layout">
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>Student's Name: Polstyanov Arseny</p>
+        <p>Course Name: Web Design</p>
+        <p>Date: May 15, 2024</p>
+        <p>Place: Minsk, Belarus</p>
+        <p>Interesting Links:</p>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web Docs: CSS</a></li>
+            <li><a href="https://www.w3schools.com/css/">W3Schools: CSS Tutorial</a></li>
+            
+        </ul>
+    </footer>
+
+</body>
+</html>

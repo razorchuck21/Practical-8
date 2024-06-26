@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-areas: 
+                "header"
+                "hero"
+                "news"
+                "footer";
+        }
+
+        header {
+            grid-area: header;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #hero {
+            grid-area: hero;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+
+        #news {
+            grid-area: news;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        @media (max-width: 768px) {
+            /* Tablet */
+            #hero, #news {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* Mobile */
+            #hero, #news {
+                grid-template-columns: 1fr;
+            }
+
+            .excerpt {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="biolife.png" alt="biolife">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <img src="shrimp.jpg" alt="shrimp">
+        <div>
+            <h1>Shrimp</h1>
+            <p>A shrimp (pl.: shrimp (US) or shrimps (UK)) is a crustacean (a form of shellfish) with an elongated body and a primarily swimming mode of locomotion – typically belonging to the Caridea or Dendrobranchiata of the order Decapoda, although some crustaceans outside of this order are also referred to as "shrimp".
+More narrow definitions may be restricted to Caridea, to smaller species of either group or to only the marine species. Under a broader definition, shrimp may be synonymous with prawn, covering stalk-eyed swimming crustaceans with long, narrow muscular tails (abdomens), long whiskers (antennae), and slender legs. Any small crustacean which resembles a shrimp tends to be called one. They swim forward by paddling with swimmerets on the underside of their abdomens, although their escape response is typically repeated flicks with the tail driving them backwards very quickly. Crabs and lobsters have strong walking legs, whereas shrimp have thin, fragile legs which they use primarily for perching.
+Shrimp are widespread and abundant. There are thousands of species adapted to a wide range of habitats. They can be found feeding near the seafloor on most coasts and estuaries, as well as in rivers and lakes. To escape predators, some species flip off the seafloor and dive into the sediment. They usually live from one to seven years. Shrimp are often solitary, though they can form large schools during the spawning season.They play important roles in the food chain and are an important food source for larger animals ranging from fish to whales. The muscular tails of many shrimp are edible to humans, and they are widely caught and farmed for human consumption. Commercial shrimp species support an industry worth 50 billion dollars a year, and in 2010 the total commercial production of shrimp was nearly 7 million tonnes. Shrimp farming became more prevalent during the 1980s, particularly in China, and by 2007 the harvest from shrimp farms exceeded the capture of wild shrimp. There are significant issues with excessive bycatch when shrimp are captured in the wild, and with pollution damage done to estuaries when they are used to support shrimp farming.
+Many shrimp species are small as the term shrimp suggests, about 2 cm (0.79 in) long, but some shrimp exceed 25 cm (9.8 in). Larger shrimp are more likely to be targeted commercially and are often referred to as prawns, particularly in the Commonwealth of Nations and former British colonies.</p>
+        </div>
+    </section>
+
+    <section id="news">
+        <article>
+            <img src="mantis.webp" alt="mantis">
+            <h2>SHRIMP CAN SMASH</h2>
+            <p>he mantis shrimp's second pair of thoracic appendages has been highly adapted for powerful close-range combat. The appendage differences divide mantis shrimp into two main types: those that hunt by impaling their prey with spear-like structures and those that smash prey with a powerful blow from a heavily mineralised club-like appendage. A considerable amount of damage can be inflicted after impact with these robust, hammer-like claws. This club is further divided into three subregions: the impact region, the periodic region, and the striated region. Mantis shrimp are commonly separated into many (most fall into spears and smashers but there are some outliers)[9] distinct groups determined by the type of claws they possess:
+Smashers possess a much more developed club and a more rudimentary spear (which is nevertheless quite sharp and still used in fights between their own kind); the club is used to bludgeon and smash their meals apart. The inner aspect of the terminal portion of the appendage can also possess a sharp edge, used to cut prey while the mantis shrimp swims.
+Spearers are armed with spiny appendages - the spines having barbed tips - used to stab and snag prey.
+Both types strike by rapidly unfolding and swinging their raptorial claws at the prey, and can inflict serious damage on victims significantly greater in size than themselves. In smashers, these two weapons are employed with blinding quickness, with an acceleration of 10,400 g (102,000 m/s2 or 335,000 ft/s2) and speeds of 23 m/s (83 km/h; 51 mph) from a standing start. Because they strike so rapidly, they generate vapor-filled bubbles in the water between the appendage and the striking surface—known as cavitation bubbles. The collapse of these cavitation bubbles produces measurable forces on their prey in addition to the instantaneous forces of 1,500 newtons that are caused by the impact of the appendage against the striking surface, which means that the prey is hit twice by a single strike; first by the claw and then by the collapsing cavitation bubbles that immediately follow. Even if the initial strike misses the prey, the resulting shock wave can be enough to stun or kill.</p>
+            
+<p class="excerpt">Shrimp have some of the most complex visual systems in the animal kingdom. They can see ultraviolet light and have a 360-degree field of vision thanks to their compound eyes.
+</p>
+            <a href="#full-story">Read More</a>
+        </article>
+        
+    </section>
+
+    <footer>
+       
+    </footer>
+</body>
+</html>
